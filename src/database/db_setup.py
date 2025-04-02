@@ -39,6 +39,17 @@ def create_database():
             FOREIGN KEY (resume_id) REFERENCES resumes(id)
         )
     ''')
+    ## Candidate related Info for scheduling interviews
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS scheduled_interviews (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            candidate_name TEXT NOT NULL,
+            candidate_email TEXT NOT NULL,
+            job_title TEXT NOT NULL,
+            interview_date TEXT NOT NULL,
+            status TEXT DEFAULT 'Pending'  -- Status: Pending, Confirmed, Canceled
+        )
+    ''')
     
     connection.commit()
     connection.close()

@@ -1,1 +1,0 @@
-Agentic recruitement screening scheduler

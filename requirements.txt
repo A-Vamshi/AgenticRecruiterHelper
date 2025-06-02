@@ -1,5 +1,0 @@
-pandas
-numpy
-PyMuPDF
-sqlite3
--e .

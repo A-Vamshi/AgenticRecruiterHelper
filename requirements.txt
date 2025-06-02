@@ -1,0 +1,9 @@
+sentence-transformers
+langchain
+scikit-learn
+langgraph
+langchain-openai
+langchain-ollama
+langchain-community
+pandas
+ipykernel

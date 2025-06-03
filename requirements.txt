@@ -8,3 +8,4 @@ langchain-community
 pandas
 ipykernel
 pymupdf
+streamlit

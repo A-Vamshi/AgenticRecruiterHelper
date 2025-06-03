@@ -7,3 +7,4 @@ langchain-ollama
 langchain-community
 pandas
 ipykernel
+pymupdf

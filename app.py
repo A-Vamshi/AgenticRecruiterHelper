@@ -10,6 +10,11 @@ resume_files = st.file_uploader("Upload PDF Resumes", type=["pdf"], accept_multi
 llm = OllamaLLM(model="llama3.2")
 all_matches = dict()
 
+with open(".env"):
+    env = env.read()
+    # Debug remove later
+    print(env)
+
 if st.button("Get resume details"):
     info = getResumeInfo(resume_files)
     st.write(info)
